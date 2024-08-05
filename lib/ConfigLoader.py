@@ -24,4 +24,4 @@ def get_spark_conf(env: str) -> SparkConf:
 
 def get_data_filter(env: str, data_filter: str) -> str:
     conf = get_config(env)
-    return "true" if conf[data_filter] == "" else conf[data_filter]
+    return 'true' if conf[data_filter] == '' else conf[data_filter]
